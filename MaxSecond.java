@@ -9,19 +9,20 @@ public class Max {
     public static void main(String args[])
     {
         int []data = new int[5];
-        int temp=0,j=0,ans;
+        // create intance variable
+        int temp=0,j=0,ans,i;
         Scanner s = new Scanner(System.in);
-        for(int i=0;i<5;i++)
+        for(i=0;i<5;i++)
         {
             data[i] = s.nextInt();
         }
-        for(int i=0;i<5;i++)
+        for(i=0;i<5;i++)
         {
             System.out.print(data[i]+" ");
         }
         int max = 0;
         int second_max=0;
-        for(int i=0;i<5;i++)
+        for( i=0;i<5;i++)
         {
             if(data[i]>max){
                 max = data[i];
@@ -29,7 +30,7 @@ public class Max {
             }
         }
 
-        for(int i = 0; i < 5; i++){
+        for( i = 0; i < 5; i++){
             if(data[i] > max){
                 second_max = max;
                 max = data[i];
